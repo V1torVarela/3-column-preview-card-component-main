@@ -1,0 +1,120 @@
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+/* tamanho do cartão  */
+.card {
+  padding: 30px;
+}
+/* Fim do tamanho do cartão  */
+.container {
+  padding: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.button {
+  /* Button learn more */
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.card img {
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  /* separação/espaço logo */
+  margin-bottom: 20px;
+}
+
+.Bright-orange {
+  /* Background colors */
+  background-color: var(--Bright-orange);
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+.Bright-orange button {
+  color: var(--Bright-orange);
+}
+.Dark-cyan {
+  background-color: var(--Dark-cyan);
+  color: white;
+}
+.Dark-cyan button {
+  color: var(--Dark-cyan);
+}
+
+.Very-dark-cyan {
+  background-color: var(--Very-dark-cyan);
+  color: white;
+  border-radius: 0px 10px 10px 0px;
+}
+.Very-Dark-cyan button {
+  color: var(--Very-dark-cyan);
+}
+.button:hover {
+  background-color: transparent;
+  color: white;
+}
+
+/* End of Background colors */
+body,
+button {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h3 {
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: capitalize;
+  font-size: 28px;
+}
+
+/* Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution {
+  color: hsl(228, 45%, 44%);
+}
+/*End of Footer */
+
+@media (min-width: 992px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .Bright-orange {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .card p {
+    margin-bottom: 50px;
+  }
+}
+
+/*@media (min-width 1280px) {
+  .container {
+    max-width: 1100px;
+  }
+}
